@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 
 const Header = ({ className }: { className?: string }) => {
   const pathname = usePathname();
-  if (pathname === "/") return null;
+  if (pathname === "/login") return null;
   return (
     <header
       className={cn("fixed inset-x-0 top-0 bg-white shadow-sm", className)}
